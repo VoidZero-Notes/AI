@@ -9,7 +9,7 @@
 ```text
 AI/
 ├── README.md
-├── Agent底层逻辑/           # Agent 运行时、工具调用、消息循环等
+├── Agent底层逻辑/           # 从 AI 基础到 Agent 前置（模型、提示词、会话）
 ├── LangGraph工作流开发/     # 状态图、节点、边与工作流编排
 ├── .cursor/
 │   ├── commands/
@@ -20,14 +20,6 @@ AI/
 ```
 
 建议阅读顺序：`Agent底层逻辑` → `LangGraph工作流开发`。
-
-### Agent底层逻辑
-
-Agent 运行时与核心机制（笔记待补充）。
-
-### LangGraph工作流开发
-
-LangGraph 状态图与工作流编排（笔记待补充）。
 
 ---
 
