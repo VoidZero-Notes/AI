@@ -9,8 +9,8 @@
 ```text
 AI/
 ├── README.md
-├── Agent底层逻辑/           # 从 AI 基础到 Agent 前置（模型、提示词、会话）
-├── LangGraph工作流开发/     # 状态图、节点、边与工作流编排
+├── Agent底层逻辑/           # 已完成：从模型到 Agent 运行单元
+├── LangGraph工作流开发/     # 待写：状态图、节点、边与工作流编排
 ├── .cursor/
 │   ├── commands/
 │   │   └── optimize-note.md # 笔记体例优化
@@ -20,6 +20,32 @@ AI/
 ```
 
 建议阅读顺序：`Agent底层逻辑` → `LangGraph工作流开发`。
+
+### Agent 底层逻辑（已完成）
+
+| # | 笔记 |
+|---|------|
+| 01 | [AI的分类与底层逻辑](Agent底层逻辑/01.%20AI的分类与底层逻辑.md) |
+| 02 | [神经网络基础](Agent底层逻辑/02.%20神经网络基础.md) |
+| 03 | [词元与分词](Agent底层逻辑/03.%20词元与分词.md) |
+| 04 | [Transformer](Agent底层逻辑/04.%20Transformer.md) |
+| 05 | [Ollama](Agent底层逻辑/05.%20Ollama.md) |
+| 06 | [系统提示词](Agent底层逻辑/06.%20系统提示词.md) |
+| 07 | [会话](Agent底层逻辑/07.%20会话.md) |
+| 08 | [Tool Calling](Agent底层逻辑/08.%20Tool%20Calling.md) |
+| 09 | [工具注册与执行](Agent底层逻辑/09.%20工具注册与执行.md) |
+| 10 | [ReAct](Agent底层逻辑/10.%20ReAct.md) |
+| 11 | [Agent](Agent底层逻辑/11.%20Agent.md) |
+| 12 | [Agent 搜索引擎](Agent底层逻辑/12.%20Agent%20搜索引擎.md) |
+| 13 | [SKILL](Agent底层逻辑/13.%20SKILL.md) |
+| 14 | [MCP](Agent底层逻辑/14.%20MCP.md) |
+| 15 | [Skill VS MCP](Agent底层逻辑/15.%20Skill%20VS%20MCP.md) |
+| 16 | [子代理](Agent底层逻辑/16.%20子代理.md) |
+| 17 | [从 Prompt 到 Graph](Agent底层逻辑/17.%20从%20Prompt%20到%20Graph.md) |
+
+### LangGraph 工作流开发（待写）
+
+尚未开写。计划接在 17 之后，讲状态图、节点、边与工作流编排。
 
 ---
 
