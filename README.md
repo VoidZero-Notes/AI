@@ -1,6 +1,6 @@
 # AI 技术笔记
 
-面向 Agent 底层逻辑与 LangGraph 工作流的学习笔记。仓库配置了两个 Cursor 工作流：**笔记体例优化（Command）** 与 **自动提交推送（Skill）**。
+面向 Agent 底层逻辑、LangGraph 工作流与 LangChain Agent 工程的学习笔记。仓库配置了两个 Cursor 工作流：**笔记体例优化（Command）** 与 **自动提交推送（Skill）**。
 
 请在 Cursor 中打开本仓库**根目录**（含 `.cursor/` 的那一层）。只打开子目录时，Command / Skill 可能不会出现。
 
@@ -10,7 +10,8 @@
 AI/
 ├── README.md
 ├── Agent底层逻辑/           # 已完成：从模型到 Agent 运行单元
-├── LangGraph工作流开发/     # 待写：状态图、节点、边与工作流编排
+├── LangGraph/               # 已完成：状态图、节点、边与工作流编排
+├── LangChain+DeepAgent/     # 进行中：create_agent 与 Agent 工程
 ├── .cursor/
 │   ├── commands/
 │   │   └── optimize-note.md # 笔记体例优化
@@ -19,7 +20,9 @@ AI/
 └── .gitignore
 ```
 
-建议阅读顺序：`Agent底层逻辑` → `LangGraph工作流开发`。
+建议阅读顺序：`Agent底层逻辑` → `LangGraph` → `LangChain+DeepAgent`。
+
+当前主线是完善 `LangChain+DeepAgent`。
 
 ### Agent 底层逻辑（已完成）
 
@@ -43,9 +46,48 @@ AI/
 | 16 | [子代理](Agent底层逻辑/16.%20子代理.md) |
 | 17 | [从 Prompt 到 Graph](Agent底层逻辑/17.%20从%20Prompt%20到%20Graph.md) |
 
-### LangGraph 工作流开发（待写）
+### LangGraph（已完成）
 
-尚未开写。计划接在 17 之后，讲状态图、节点、边与工作流编排。
+| # | 笔记 |
+|---|------|
+| 01 | [langgraph核心概念](LangGraph/01.%20langgraph核心概念.md) |
+| 02 | [模型](LangGraph/02.%20模型.md) |
+| 03 | [消息](LangGraph/03.%20消息.md) |
+| 04 | [Reducer](LangGraph/04.%20Reducer.md) |
+| 05 | [Agent Server](LangGraph/05.%20Agent%20Server.md) |
+| 06 | [超步](LangGraph/06.%20超步.md) |
+| 07 | [线程和检查点](LangGraph/07.%20线程和检查点.md) |
+| 08 | [工具节点](LangGraph/08.%20工具节点.md) |
+| 09 | [Mock Model](LangGraph/09.%20Mock%20Model.md) |
+| 10 | [模型配置的动态切换](LangGraph/10.%20模型配置的动态切换.md) |
+| 11 | [RunnableConfig](LangGraph/11.%20RunnableConfig.md) |
+| 12 | [Runtime](LangGraph/12.%20Runtime.md) |
+| 13 | [Assistant API](LangGraph/13.%20Assistant%20API.md) |
+| 14 | [Thread API](LangGraph/14.%20Thread%20API.md) |
+| 15 | [Run API](LangGraph/15.%20Run%20API.md) |
+| 16 | [Cron API](LangGraph/16.%20Cron%20API.md) |
+| 17 | [协议与运维](LangGraph/17.%20协议与运维.md) |
+| 18 | [子图](LangGraph/18.%20子图.md) |
+| 19 | [时间旅行](LangGraph/19.%20时间旅行.md) |
+| 20 | [容错机制](LangGraph/20.%20容错机制.md) |
+| 21 | [Command](LangGraph/21.%20Command.md) |
+| 22 | [中断](LangGraph/22.%20中断.md) |
+| 23 | [人在回路](LangGraph/23.%20人在回路.md) |
+| 24 | [动态扇出](LangGraph/24.%20动态扇出.md) |
+| 25 | [事件流](LangGraph/25.%20事件流.md) |
+| 26 | [Store](LangGraph/26.%20Store.md) |
+| 27 | [长期记忆](LangGraph/27.%20长期记忆.md) |
+| 28 | [A2A 协议](LangGraph/28.%20A2A%20协议.md) |
+| 29 | [Agent部署](LangGraph/29.%20Agent部署.md) |
+
+### LangChain + DeepAgent（进行中）
+
+在 LangGraph 图之上用 `create_agent` 落地可 `invoke` 的 Agent，并给出本目录共用工程底稿。后续章节待写。
+
+| # | 笔记 |
+|---|------|
+| 01 | [认识 Agent](LangChain+DeepAgent/01.%20认识%20Agent.md) |
+| 02 | [结构化输出](LangChain+DeepAgent/02.%20结构化输出.md) |
 
 ---
 
@@ -75,13 +117,13 @@ AI/
 3. `@` 要优化的笔记后回车，例如：
 
 ```text
-/optimize-note @Agent底层逻辑/01. 示例.md
+/optimize-note @LangChain+DeepAgent/01. 认识 Agent.md
 ```
 
 可一次多个：
 
 ```text
-/optimize-note @Agent底层逻辑/01. a.md @LangGraph工作流开发/02. b.md
+/optimize-note @LangChain+DeepAgent/01. 认识 Agent.md @LangGraph/02. 模型.md
 ```
 
 Agent 会**直接改文件**，不只输出 Diff。
