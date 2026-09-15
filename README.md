@@ -82,12 +82,15 @@ AI/
 
 ### LangChain + DeepAgent（进行中）
 
-在 LangGraph 图之上用 `create_agent` 落地可 `invoke` 的 Agent，并给出本目录共用工程底稿。后续章节待写。
+在 LangGraph 图之上用 `create_agent` 落地可 `invoke` 的 Agent，并给出本目录共用工程底稿。已写到预置中间件；后续章节待写。
 
 | # | 笔记 |
 |---|------|
 | 01 | [认识 Agent](LangChain+DeepAgent/01.%20认识%20Agent.md) |
 | 02 | [结构化输出](LangChain+DeepAgent/02.%20结构化输出.md) |
+| 03 | [中间件](LangChain+DeepAgent/03.%20中间件.md) |
+| 04 | [动态提示词与动态模型](LangChain+DeepAgent/04.%20动态提示词与动态模型.md) |
+| 05 | [预置中间件](LangChain+DeepAgent/05.%20预置中间件.md) |
 
 ---
 
