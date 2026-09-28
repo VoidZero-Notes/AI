@@ -11,7 +11,7 @@ AI/
 ├── README.md
 ├── Agent底层逻辑/           # 已完成：从模型到 Agent 运行单元
 ├── LangGraph/               # 已完成：状态图、节点、边与工作流编排
-├── LangChain+DeepAgent/     # 进行中：create_agent 与 Agent 工程
+├── LangChain+DeepAgent/     # 已完成：create_agent 与 Agent 工程
 ├── .cursor/
 │   ├── commands/
 │   │   └── optimize-note.md # 笔记体例优化
@@ -20,9 +20,7 @@ AI/
 └── .gitignore
 ```
 
-建议阅读顺序：`Agent底层逻辑` → `LangGraph` → `LangChain+DeepAgent`。
-
-当前主线是完善 `LangChain+DeepAgent`。
+建议阅读顺序：`Agent底层逻辑` → `LangGraph` → `LangChain+DeepAgent`。三条主线均已完成。
 
 ### Agent 底层逻辑（已完成）
 
@@ -80,9 +78,9 @@ AI/
 | 28 | [A2A 协议](LangGraph/28.%20A2A%20协议.md) |
 | 29 | [Agent部署](LangGraph/29.%20Agent部署.md) |
 
-### LangChain + DeepAgent（进行中）
+### LangChain + DeepAgent（已完成）
 
-在 LangGraph 图之上用 `create_agent` 落地可 `invoke` 的 Agent，并给出本目录共用工程底稿。已写到预置中间件；后续章节待写。
+在 LangGraph 图之上用 `create_agent` 与 Deep Agents 落地可 `invoke` 的 Agent，覆盖中间件、文件系统与沙箱、人在回路、Skills 与 MCP、记忆与上下文压缩、多智能体编排，以及身份认证、授权与资源隔离。
 
 | # | 笔记 |
 |---|------|
@@ -91,6 +89,28 @@ AI/
 | 03 | [中间件](LangChain+DeepAgent/03.%20中间件.md) |
 | 04 | [动态提示词与动态模型](LangChain+DeepAgent/04.%20动态提示词与动态模型.md) |
 | 05 | [预置中间件](LangChain+DeepAgent/05.%20预置中间件.md) |
+| 06 | [DeepAgent](LangChain+DeepAgent/06.%20DeepAgent.md) |
+| 07 | [文件系统工具](LangChain+DeepAgent/07.%20文件系统工具.md) |
+| 08 | [沙箱](LangChain+DeepAgent/08.%20沙箱.md) |
+| 09 | [实现服务端CodingAgent](LangChain+DeepAgent/09.%20实现服务端CodingAgent.md) |
+| 10 | [HITL中间件](LangChain+DeepAgent/10.%20HITL中间件.md) |
+| 11 | [文件操作权限](LangChain+DeepAgent/11.%20文件操作权限.md) |
+| 12 | [后端路由](LangChain+DeepAgent/12.%20后端路由.md) |
+| 13 | [多模态消息](LangChain+DeepAgent/13.%20多模态消息.md) |
+| 14 | [Skills 中间件](LangChain+DeepAgent/14.%20Skills%20中间件.md) |
+| 15 | [MCP 工具注入](LangChain+DeepAgent/15.%20MCP%20工具注入.md) |
+| 16 | [Memory 中间件](LangChain+DeepAgent/16.%20Memory%20中间件.md) |
+| 17 | [上下文压缩](LangChain+DeepAgent/17.%20上下文压缩.md) |
+| 18 | [先计划再行动](LangChain+DeepAgent/18.%20先计划再行动.md) |
+| 19 | [验收和评审](LangChain+DeepAgent/19.%20验收和评审.md) |
+| 20 | [解释器](LangChain+DeepAgent/20.%20解释器.md) |
+| 21 | [多智能体](LangChain+DeepAgent/21.%20多智能体.md) |
+| 22 | [SubAgent](LangChain+DeepAgent/22.%20SubAgent.md) |
+| 23 | [Handoff模式](LangChain+DeepAgent/23.%20Handoff模式.md) |
+| 24 | [路由模式](LangChain+DeepAgent/24.%20路由模式.md) |
+| 25 | [身份认证](LangChain+DeepAgent/25.%20身份认证.md) |
+| 26 | [授权](LangChain+DeepAgent/26.%20授权.md) |
+| 27 | [资源隔离](LangChain+DeepAgent/27.%20资源隔离.md) |
 
 ---
 
